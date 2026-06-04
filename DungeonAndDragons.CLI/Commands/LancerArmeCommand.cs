@@ -1,7 +1,7 @@
 ﻿#region Usings declarations
 
 using DungeonAndDragons.CLI.__tmp;
-using DungeonAndDragons.Domain.Core;
+using DungeonAndDragons.Domain.Model;
 using DungeonAndDragons.Domain.UseCases;
 
 using Spectre.Console.Cli;
@@ -20,7 +20,8 @@ namespace DungeonAndDragons.CLI.Commands {
             Personnages    personnages  = new PersonnagesImp();
             Armes          armes        = new ArmesImp();
             Joueur         joueur       = new JoueurImp();
-            LancerArme     lancerArme   = new(personnages, armes, joueur);
+            MaîtreDuJeu    maitreDuJeu  = new MaîtreDuJeuImp();
+            LancerArme     lancerArme   = new(personnages, armes, joueur, maitreDuJeu);
             PersonnageId   personnageId = PersonnageId.From(Guid.Parse("DDF2CA5B-327E-40DC-BFCA-D9769F7B66F9"));
             ArmeId         armeId       = ArmeId.From(Guid.Parse("2B04B9C2-184E-4429-BCE1-D65312394484")); // hachette
             Distance       distance     = Distance.From(settings.Distance);

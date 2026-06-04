@@ -1,6 +1,6 @@
 ﻿#region Usings declarations
 
-using DungeonAndDragons.Domain.Core;
+using DungeonAndDragons.Domain.Model;
 
 using Spectre.Console;
 
@@ -16,6 +16,13 @@ public sealed class JoueurImp : Joueur {
         RésultatD20 résultatD20 = RésultatD20.FromInt32(input);
 
         return résultatD20;
+    }
+
+    /// <inheritdoc />
+    public int Lancer(TypeDeDé d20) {
+        ArgumentNullException.ThrowIfNull(d20);
+
+        throw new NotImplementedException();
     }
 
 }

@@ -1,6 +1,6 @@
 ﻿#region Usings declarations
 
-using DungeonAndDragons.Domain.Core;
+using DungeonAndDragons.Domain.Model;
 
 #endregion
 

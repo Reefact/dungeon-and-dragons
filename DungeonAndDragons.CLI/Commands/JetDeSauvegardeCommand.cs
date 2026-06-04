@@ -2,7 +2,7 @@
 
 using DungeonAndDragons.CLI.__tmp;
 using DungeonAndDragons.CLI.Parsers;
-using DungeonAndDragons.Domain.Core;
+using DungeonAndDragons.Domain.Model;
 using DungeonAndDragons.Domain.UseCases;
 
 using Spectre.Console;

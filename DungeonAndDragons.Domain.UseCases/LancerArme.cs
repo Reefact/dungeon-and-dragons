@@ -1,6 +1,6 @@
 ﻿#region Usings declarations
 
-using DungeonAndDragons.Domain.Core;
+using DungeonAndDragons.Domain.Model;
 
 #endregion
 
@@ -62,8 +62,8 @@ public sealed class LancerArme {
         bool estTouché = _maîtreDuJeu.EstTouché(jetAttaque);
         if (estTouché) {
             AttaqueDistance attaqueDistance = arme.GetModeAttaque<AttaqueDistance>();
-            personnage.Attaque<AttaqueDistance>()
-            int             dégâts          = attaqueDistance.CalculerDégâts(_joueur, personnage, args.DistanceDeLaCible);
+            //personnage.Attaque<AttaqueDistance>()
+            int dégâts = attaqueDistance.CalculerDégâts(_joueur, personnage, args.DistanceDeLaCible);
 
             // ...
         }

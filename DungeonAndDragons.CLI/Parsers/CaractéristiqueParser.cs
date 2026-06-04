@@ -3,7 +3,7 @@
 using System.Globalization;
 using System.Text;
 
-using DungeonAndDragons.Domain.Core;
+using DungeonAndDragons.Domain.Model;
 
 #endregion
 
