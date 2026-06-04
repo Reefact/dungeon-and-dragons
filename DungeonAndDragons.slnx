@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/sources/">
+    <Project Path="DungeonAndDragons.CLI/DungeonAndDragons.CLI.csproj" Id="56c175b1-a027-41f4-b8b6-6cfd61d0c589" />
+    <Project Path="DungeonAndDragons.Domain.UseCases/DungeonAndDragons.Domain.UseCases.csproj" Id="9b82046e-4033-4d26-af65-5f05e2effcdd" />
+    <Project Path="DungeonAndDragons/DungeonAndDragons.Domain.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="DungeonAndDragons.Domain.Core.UnitTests/DungeonAndDragons.Domain.Core.UnitTests.csproj" Id="8cc0670a-bab6-44c9-aa0d-262a0c7bb284" />
+    <Project Path="DungeonAndDragons.Domain.UseCases.UnitTests/DungeonAndDragons.Domain.UseCases.UnitTests.csproj" Id="18451258-3279-426e-8cb9-f47dc70132fd" />
+  </Folder>
+</Solution>
